@@ -24,12 +24,12 @@ namespace API.Controllers
         }
          [HttpGet]
          public async Task<ActionResult<List<Activity>>> GetActivities(){
-            return await _mediator.Send(new List.Query());
+            return await Mediator.Send(new List.Query());
          }
          [HttpGet("{id}")]
          public async Task<ActionResult<Activity>> GetActivity(Guid id){
             // return await _context.Activities.FindAsync(id);
-            return Ok();
+            return await Mediator.Send(new Details.Query{Id = id});
          }
     }
 }
