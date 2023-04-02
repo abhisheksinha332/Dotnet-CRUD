@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "r4hXx1ET6sxEMAl8J37gOWpgcg0u5rWdTFiJu5LODxC3RX+U3H9LZrsOANdl0Dq/87+wNAeS6m/yQiHgjpuVqg==",
+  "dgSpecHash": "QZiZmABJvXw69uPOJbQCeCK9hKK8GobBi+1GbBe1YuqrH/B9NGbiaxNM0jy6PtN9BeZyp97euh1F6Fwmfhz9Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\v-abhissinha\\Trial\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\v-abhissinha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\v-abhissinha\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\v-abhissinha\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\v-abhissinha\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\v-abhissinha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\v-abhissinha\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.4\\microsoft.data.sqlite.core.7.0.4.nupkg.sha512",
     "C:\\Users\\v-abhissinha\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
