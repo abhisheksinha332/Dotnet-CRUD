@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Domain;
 using MediatR;
 using Persistence;
@@ -17,8 +18,10 @@ namespace Application.Activities
         public class Handller : IRequestHandler<Command>
         {
         private readonly DataContext _context;
-            public Handller(DataContext context)
+        private readonly IMapper _mapper;
+            public Handller(DataContext context, IMapper mapper)
             {
+            _mapper = mapper;
             _context = context;
             }
 
@@ -26,7 +29,9 @@ namespace Application.Activities
             {
                 var activity =await _context.Activities.FindAsync(request.Activity.Id);
 
-                activity.Title = request.Activity.Title ?? activity.Title;
+                // activity.Title = request.Activity.Title ?? activity.Title;
+
+                _mapper.Map(request.Activity, activity);
 
                 await _context.SaveChangesAsync();
 
