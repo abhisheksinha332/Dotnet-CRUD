@@ -4,6 +4,7 @@ import List from 'semantic-ui-react/dist/commonjs/elements/List';
 import { Activity } from '../Models/activity';
 import Navbar from './Navbar';
 import { Container } from 'semantic-ui-react';
+import ActivityDashboard from '../../features/Activity/Dashboard/ActivityDashboard';
 
 function App() {
 
@@ -23,14 +24,7 @@ function App() {
     <Fragment>
         <Navbar />
         <Container style={{marginTop:'7em'}}>
-          <List>
-            {activities.map((activity) =>(
-              <List.Item key={activity.id}>
-                {activity.title}
-              </List.Item>
-            ))}
-
-          </List>
+          <ActivityDashboard activities={activities} />
         </Container>
         
         
